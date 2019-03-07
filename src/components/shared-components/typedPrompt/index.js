@@ -2,7 +2,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { PromptContainer } from 'components/shared-components/style';
+import { PromptContainer, Cursor } from 'components/shared-components/style';
 
 const INITIAL_DELAY = 900;
 
@@ -42,10 +42,13 @@ class TypedPrompt extends React.Component {
     const { initialText } = this.props;
 
     return(
-      <PromptContainer>
-        >{' '}
-        {this.state.displayText || initialText}
-      </PromptContainer>
+      <React.Fragment>
+        <PromptContainer>
+          >{' '}
+          {this.state.displayText || initialText}
+        </PromptContainer>
+        <Cursor>&nbsp;</Cursor>
+      </React.Fragment>
     );
   }
 }

@@ -1,3 +1,4 @@
+import { keyframes } from '@emotion/core';
 import styled from '@emotion/styled';
 import { COLORS } from 'constants.js';
 
@@ -13,4 +14,15 @@ export const PromptSubHeader = styled.div`
 export const StyledLink = styled.a`
   color: ${COLORS.terminalCyan};
   text-decoration: none;
+`;
+
+export const Cursor = styled.span`
+  background: rgba(247, 247, 247, 0.65);
+  animation: cursor 1.25s steps(1) infinite;
+
+  @keyframes cursor {
+    50% {
+      background-color: transparent;
+    }
+  }
 `;
