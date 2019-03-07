@@ -1,11 +1,11 @@
 import React from 'react';
-import { PromptContainer } from 'components/shared-components/style';
+import { Prompt } from 'components/shared-components/style';
 
 const StaticPrompt = ({ text }) => (
-  <PromptContainer>
+  <Prompt>
     >{' '}
     {text}
-  </PromptContainer>
+  </Prompt>
 );
 
 export default StaticPrompt;

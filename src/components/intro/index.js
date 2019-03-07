@@ -1,10 +1,10 @@
 import React from 'react';
 
 import TypedPrompt from 'components/shared-components/typedPrompt';
-import { PromptSubHeader, StyledLink } from 'components/shared-components/style';
+import { PromptContainer, PromptSubHeader, StyledLink } from 'components/shared-components/style';
 
 export const Intro = () => (
-  <React.Fragment>
+  <PromptContainer>
     <TypedPrompt
       initialText='👋'
       inputText="Hi, I'm Yihwan"
@@ -15,7 +15,7 @@ export const Intro = () => (
         Curology
       </StyledLink>.
     </PromptSubHeader>
-  </React.Fragment>
+  </PromptContainer>
 );
 
 export default Intro;

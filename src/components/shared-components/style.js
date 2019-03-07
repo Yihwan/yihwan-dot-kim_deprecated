@@ -2,7 +2,13 @@ import { keyframes } from '@emotion/core';
 import styled from '@emotion/styled';
 import { COLORS } from 'constants.js';
 
-export const PromptContainer = styled.span`
+export const PromptContainer = styled.div`
+  &:not(:first-child) {
+    margin-top: 2.5rem;
+  }
+`;
+
+export const Prompt = styled.span`
   color: ${COLORS.almostWhite};
 `;
 
