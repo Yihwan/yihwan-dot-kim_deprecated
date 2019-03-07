@@ -1,5 +1,5 @@
 import React from 'react';
-import { HeaderContainer, ContentContainer } from './style';
+import { BlinkableHeaderContainer, ContentContainer } from './style';
 
 class Accordion extends React.Component {
   constructor(props){
@@ -25,9 +25,9 @@ class Accordion extends React.Component {
 
     return(
       <div>
-        <HeaderContainer blink={isHeaderBlinking} onClick={this.handleClick}>
+        <BlinkableHeaderContainer blink={isHeaderBlinking} onClick={this.handleClick}>
           {header}
-        </HeaderContainer>
+        </BlinkableHeaderContainer>
         {isOpen && <ContentContainer>{content}</ContentContainer>}
       </div>
     )
