@@ -2,7 +2,6 @@
 
 import styled from '@emotion/styled';
 import { COLORS, MEDIA_QUERIES } from 'constants.js';
-import { PromptContainer } from 'components/shared-components/style';
 
 export const TerminalContainerWrapper = styled.section`
   height: 100vh;
@@ -19,7 +18,7 @@ export const TerminalContainer = styled.section`
   height: 100%;
 
   ${MEDIA_QUERIES.mdUp} {
-    max-width: 992px;
+    max-width: 768px;
     margin: 0 2rem;
     height: 90%;
   }
