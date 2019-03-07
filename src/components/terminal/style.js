@@ -2,6 +2,7 @@
 
 import styled from '@emotion/styled';
 import { COLORS, MEDIA_QUERIES } from 'constants.js';
+import { PromptContainer } from 'components/shared-components/style';
 
 export const TerminalContainerWrapper = styled.section`
   height: 100vh;
@@ -52,4 +53,8 @@ export const TerminalBody = styled.div`
   box-shadow: 0 50px 100px rgba(65, 65, 74, .2);
   box-shadow: 0 15px 35px rgba(65, 65, 74, .3);
   box-shadow: 0 5px 15px rgba(0,0,0,.2);
+
+  & > div:not(:first-child) {
+    margin-top: 2.5rem;
+  }
 `;

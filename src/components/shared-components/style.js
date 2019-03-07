@@ -3,9 +3,7 @@ import styled from '@emotion/styled';
 import { COLORS } from 'constants.js';
 
 export const PromptContainer = styled.div`
-  &:not(:first-child) {
-    margin-top: 2.5rem;
-  }
+
 `;
 
 export const Prompt = styled.span`
