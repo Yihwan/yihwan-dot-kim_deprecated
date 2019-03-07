@@ -14,6 +14,7 @@ export const globalStyles = css`
 `;
 
 export const COLORS = {
+  'almostWhite': '#f7f7f7',
   'lightGrey': '#e4e3e5',
   'darkGrey': '#1B1B1D',
   'bodyRed': '#f96256',
@@ -22,6 +23,8 @@ export const COLORS = {
   'borderRed': '#f65549',
   'borderYellow': '#ffb524',
   'borderGreen': '#2dbb41',
+  'terminalYellow': '#e7d184',
+  'terminalCyan': '#35feff',
 }
 
 export const MEDIA_QUERIES = {

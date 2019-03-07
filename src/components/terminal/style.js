@@ -1,3 +1,5 @@
+// mocked this amazing design from justinchi.me
+
 import styled from '@emotion/styled';
 import { COLORS, MEDIA_QUERIES } from 'constants.js';
 
@@ -44,6 +46,8 @@ export const TerminalBody = styled.div`
   height: 100%;
   border-radius: 0 0 4px 4px;
   background-color: ${COLORS.darkGrey};
+  padding: 2.5rem;
+  font-size: 1.15rem;
 
   box-shadow: 0 50px 100px rgba(65, 65, 74, .2);
   box-shadow: 0 15px 35px rgba(65, 65, 74, .3);

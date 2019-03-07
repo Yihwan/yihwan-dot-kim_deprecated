@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { Global } from '@emotion/core';
 import { globalStyles } from 'constants.js';
 
-import Terminal from './components/terminal';
+import Terminal from 'components/terminal';
+import Intro from 'components/intro';
 
 class App extends Component {
   render() {
@@ -10,7 +11,7 @@ class App extends Component {
       <React.Fragment>
         <Global styles={globalStyles}/>
         <Terminal>
-          <div>text</div>
+          <Intro />
         </Terminal>
       </React.Fragment>
     );
