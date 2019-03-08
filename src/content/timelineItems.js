@@ -17,7 +17,7 @@ export const data = [
   {
     id: 2,
     icon: <FontAwesomeIcon icon="envelope" />,
-    date: '1991 Q3',
+    date: '1991 Q2',
     header: 'Boarded a flight for the first time',
     detail: "- for my sister's graduation in Boston. It was an AA flight out of LAX, and they served plasticized ham and cheese sandwiches. But it was magical all the same.",
   },
