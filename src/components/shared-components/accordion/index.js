@@ -10,7 +10,7 @@ class Accordion extends React.Component {
     super(props);
 
     this.state = {
-      isOpen: false,
+      isOpen: true,
       isHeaderBlinking: true,
     }
   }

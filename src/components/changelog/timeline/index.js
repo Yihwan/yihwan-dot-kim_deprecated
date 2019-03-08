@@ -7,6 +7,7 @@ import {
   ItemMetaData,
   ItemIcon,
   ItemDate,
+  ItemText,
   ItemHeader,
   ItemDetail,
 } from './style';
@@ -19,8 +20,10 @@ const TimelineItem = ({ content }) => (
       <ItemIcon>{data.icon}</ItemIcon>
       <ItemDate>{data.date}</ItemDate>
     </ItemMetaData>
-    <ItemHeader>{data.header}</ItemHeader>
-    <ItemDetail> {data.detail}</ItemDetail>
+    <ItemText>
+      <ItemHeader>{data.header}</ItemHeader>
+      <ItemDetail> {data.detail}</ItemDetail>
+    </ItemText>
   </TimelineItemContainer>
 )
 const Timeline = () => (

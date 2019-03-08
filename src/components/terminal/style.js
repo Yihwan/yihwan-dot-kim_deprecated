@@ -46,8 +46,7 @@ export const TerminalBody = styled.div`
   height: 100%;
   border-radius: 0 0 4px 4px;
   background-color: ${COLORS.darkGrey};
-  padding: 2.5rem;
-  font-size: 1.15rem;
+  font-size: 1rem;
 
   box-shadow: 0 50px 100px rgba(65, 65, 74, .2);
   box-shadow: 0 15px 35px rgba(65, 65, 74, .3);
@@ -55,5 +54,10 @@ export const TerminalBody = styled.div`
 
   & > section:not(:first-child) {
     margin-top: 2.5rem;
+  }
+
+  padding: 2rem 1.5rem;
+  ${MEDIA_QUERIES.mdUp} {
+    padding: 2.5rem;
   }
 `;
