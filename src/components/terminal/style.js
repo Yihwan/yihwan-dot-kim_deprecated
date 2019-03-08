@@ -8,6 +8,10 @@ export const TerminalContainerWrapper = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  ${MEDIA_QUERIES.smUp} {
+    background: linear-gradient(45deg, rgba(53, 254, 255, .1), rgba(231, 209, 132, .1));
+  }
 `;
 
 export const TerminalContainer = styled.section`
