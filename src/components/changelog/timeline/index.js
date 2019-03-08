@@ -13,7 +13,7 @@ import {
   ItemDetail,
 } from './style';
 
-const TimelineItem = ({ item }) => (
+const TimelineItem = ({ item, lastIndex }) => (
   <TimelineItemContainer>
     <ItemMetaData>
       <ItemIcon>{item.icon}</ItemIcon>
@@ -21,7 +21,7 @@ const TimelineItem = ({ item }) => (
     </ItemMetaData>
     <ItemText>
       <Accordion
-        activateBlinker={item.id === 1}
+        activateBlinker={item.id === lastIndex}
         header={<ItemHeader><span>{item.header}</span></ItemHeader>}
         content={<ItemDetail> {item.detail}</ItemDetail>}
       />
@@ -29,10 +29,14 @@ const TimelineItem = ({ item }) => (
   </TimelineItemContainer>
 )
 
-const Timeline = () => (
-  <TimelineContainer>
-    {data.map(item => <TimelineItem key={item.id} item={item}/>)}
-  </TimelineContainer>
-);
+const Timeline = () => {
+  const lastIndex = data.length;
+  const reversedData = data.sort((a, b) => b.id - a.id);
+  return(
+    <TimelineContainer>
+      {reversedData.map(item => <TimelineItem key={item.id} item={item} lastIndex={lastIndex}/>)}
+    </TimelineContainer>
+  )
+};
 
 export default Timeline;

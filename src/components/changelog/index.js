@@ -11,7 +11,7 @@ const Changelog = () => (
     header={
       <PromptContainer>
         <StaticPrompt text='Changelog'/>
-        <PromptSubHeader>Some highlights from life.</PromptSubHeader>
+        <PromptSubHeader>Some highlights from my life.</PromptSubHeader>
       </PromptContainer>
     }
     content={<Timeline />}

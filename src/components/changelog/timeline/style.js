@@ -50,4 +50,5 @@ export const ItemHeader = styled.div`
 
 export const ItemDetail = styled.div`
   margin-top: 0.5rem;
+  line-height: 1.25rem;
 `;
