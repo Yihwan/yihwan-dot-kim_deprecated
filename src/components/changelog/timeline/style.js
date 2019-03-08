@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { MEDIA_QUERIES, COLORS } from 'constants.js';
+import { MEDIA_QUERIES } from 'constants.js';
 
 export const TimelineContainer = styled.section`
   margin-top: 1rem;

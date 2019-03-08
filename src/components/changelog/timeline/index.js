@@ -21,6 +21,7 @@ const TimelineItem = ({ item }) => (
     </ItemMetaData>
     <ItemText>
       <Accordion
+        activateBlinker={item.id === 1}
         header={<ItemHeader>{item.header}</ItemHeader>}
         content={<ItemDetail> {item.detail}</ItemDetail>}
       />
@@ -29,7 +30,7 @@ const TimelineItem = ({ item }) => (
 )
 const Timeline = () => (
   <TimelineContainer>
-    {data.map(item => <TimelineItem item={item}/>)}
+    {data.map(item => <TimelineItem key={item.id} item={item}/>)}
   </TimelineContainer>
 );
 
