@@ -20,4 +20,25 @@ export const data = [{
   date: '2013.06',
   header: 'Graduated college',
   detail: 'B.A. in Political Science Lots of text B.A. in Political Science Lots of text B.A. in Political Science Lots of text',
+}, {
+  id: 3,
+  icon: <FontAwesomeIcon icon="envelope" />,
+  iconColor: COLORS.terminalCyan,
+  date: '2013.06',
+  header: 'Graduated college',
+  detail: 'B.A. in Political Science Lots of text B.A. in Political Science Lots of text B.A. in Political Science Lots of text',
+}, {
+  id: 4,
+  icon: <FontAwesomeIcon icon="envelope" />,
+  iconColor: COLORS.terminalCyan,
+  date: '2013.06',
+  header: 'Graduated college',
+  detail: 'B.A. in Political Science Lots of text B.A. in Political Science Lots of text B.A. in Political Science Lots of text',
+}, {
+  id: 5,
+  icon: <FontAwesomeIcon icon="envelope" />,
+  iconColor: COLORS.terminalCyan,
+  date: '2013.06',
+  header: 'Graduated college',
+  detail: 'B.A. in Political Science Lots of text B.A. in Political Science Lots of text B.A. in Political Science Lots of text',
 }];

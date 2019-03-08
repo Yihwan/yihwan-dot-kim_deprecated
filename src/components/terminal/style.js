@@ -47,6 +47,7 @@ export const TerminalBody = styled.div`
   border-radius: 0 0 4px 4px;
   background-color: ${COLORS.darkGrey};
   font-size: 1rem;
+  overflow: scroll;
 
   box-shadow: 0 50px 100px rgba(65, 65, 74, .2);
   box-shadow: 0 15px 35px rgba(65, 65, 74, .3);
