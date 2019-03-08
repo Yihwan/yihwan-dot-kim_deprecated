@@ -7,7 +7,7 @@ library.add(faEnvelope, faKey);
 
 export const data = {
   icon: <FontAwesomeIcon icon="envelope" />,
-  date: '2Q2013',
+date: '2013.06',
   header: 'Graduated college',
-  detail: 'B.A. in Political Science',
+  detail: 'B.A. in Political Science Lots of text B.A. in Political Science Lots of text B.A. in Political Science Lots of text',
 }

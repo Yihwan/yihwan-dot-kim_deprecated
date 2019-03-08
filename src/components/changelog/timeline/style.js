@@ -7,12 +7,12 @@ export const TimelineContainer = styled.section`
 
 export const TimelineItemContainer = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
-  flex-wrap: wrap;
 
-
-  ${MEDIA_QUERIES.mdUp} {
-    padding: 0.5rem 1.25rem;
+  ${MEDIA_QUERIES.smUp} {
+    flex-direction: row;
+    padding: 0.5rem 0;
   }
 `;
 
@@ -25,7 +25,7 @@ export const ItemIcon = styled.div`
 `;
 
 export const ItemDate = styled.div`
-  margin: 0 3rem 0 2rem;
+  margin: 0 2rem;
 `;
 
 export const ItemText = styled.div`
