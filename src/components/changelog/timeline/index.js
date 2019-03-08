@@ -22,7 +22,7 @@ const TimelineItem = ({ item }) => (
     <ItemText>
       <Accordion
         activateBlinker={item.id === 1}
-        header={<ItemHeader>{item.header}</ItemHeader>}
+        header={<ItemHeader><span>{item.header}</span></ItemHeader>}
         content={<ItemDetail> {item.detail}</ItemDetail>}
       />
     </ItemText>

@@ -33,6 +33,7 @@ export const ItemDate = styled.div`
 `;
 
 export const ItemText = styled.div`
+  flex: 1;
   ${MEDIA_QUERIES.mdUp} {
     margin-left: 4rem;
   }

@@ -68,7 +68,7 @@ export const data = [
     icon: <FontAwesomeIcon icon="envelope" />,
     date: 'Q4 2011',
     header: 'Studied abroad in Santiago, Chile',
-    detail: 'Discovered avocado toast before it was cool.',
+    detail: 'B.A. in Political Science Lots of text B.A. in Political Science Lots of text B.A. in Political Science Lots of text',
   },
   {
     id: 10,
