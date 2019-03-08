@@ -12,6 +12,7 @@ export const TimelineItemContainer = styled.div`
 
   ${MEDIA_QUERIES.smUp} {
     flex-direction: row;
+    flex-direction: space-between;
   }
 `;
 
@@ -25,7 +26,7 @@ export const ItemIcon = styled.div`
 `;
 
 export const ItemDate = styled.div`
-  margin: 0 1rem;
+  margin: 0 0.75rem;
 
   ${MEDIA_QUERIES.smUp} {
     margin: 0 2rem;
@@ -33,7 +34,6 @@ export const ItemDate = styled.div`
 `;
 
 export const ItemText = styled.div`
-  flex: 1;
   ${MEDIA_QUERIES.mdUp} {
     margin-left: 4rem;
   }
