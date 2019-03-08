@@ -7,6 +7,7 @@ import Timeline from './timeline/index';
 
 const Changelog = () => (
   <Accordion
+    activateBlinker
     header={
       <PromptContainer>
         <StaticPrompt text="Changelog" subHeader/>

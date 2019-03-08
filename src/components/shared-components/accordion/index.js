@@ -10,7 +10,7 @@ class Accordion extends React.Component {
     super(props);
 
     this.state = {
-      isOpen: true,
+      isOpen: false,
       isHeaderBlinking: true,
     }
   }
@@ -24,12 +24,12 @@ class Accordion extends React.Component {
   turnOffHeaderBlinking = () => this.setState({ isHeaderBlinking: false });
 
   render() {
-    const { header, content } = this.props;
+    const { header, content, activateBlinker } = this.props;
     const { isOpen, isHeaderBlinking } = this.state;
 
     return(
       <AccordionContainer>
-        <BlinkableHeaderContainer blink={isHeaderBlinking} onClick={this.handleClick}>
+        <BlinkableHeaderContainer blink={activateBlinker && isHeaderBlinking} onClick={this.handleClick}>
           {header}
         </BlinkableHeaderContainer>
         {isOpen && <ContentContainer>{content}</ContentContainer>}

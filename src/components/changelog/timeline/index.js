@@ -1,5 +1,6 @@
 import React from 'react';
 import { data } from 'content/timelineItems';
+import Accordion from 'components/shared-components/accordion';
 
 import {
   TimelineContainer,
@@ -12,23 +13,23 @@ import {
   ItemDetail,
 } from './style';
 
-
-
-const TimelineItem = ({ content }) => (
+const TimelineItem = ({ item }) => (
   <TimelineItemContainer>
     <ItemMetaData>
-      <ItemIcon>{data.icon}</ItemIcon>
-      <ItemDate>{data.date}</ItemDate>
+      <ItemIcon color={item.iconColor}>{item.icon}</ItemIcon>
+      <ItemDate>{item.date}</ItemDate>
     </ItemMetaData>
     <ItemText>
-      <ItemHeader>{data.header}</ItemHeader>
-      <ItemDetail> {data.detail}</ItemDetail>
+      <Accordion
+        header={<ItemHeader>{item.header}</ItemHeader>}
+        content={<ItemDetail> {item.detail}</ItemDetail>}
+      />
     </ItemText>
   </TimelineItemContainer>
 )
 const Timeline = () => (
   <TimelineContainer>
-    <TimelineItem />
+    {data.map(item => <TimelineItem item={item}/>)}
   </TimelineContainer>
 );
 
