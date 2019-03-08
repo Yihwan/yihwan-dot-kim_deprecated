@@ -14,3 +14,9 @@ export const ItemHeader = styled.div`
 
 export const ItemDetail = styled.div`
 `;
+
+export const ItemIcon = styled.div`
+`;
+
+export const ItemDate = styled.div`
+`;
