@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 
 export const TimelineContainer = styled.section`
+  margin-top: 1rem;
 `;
 
 export const TimelineItemContainer = styled.div`

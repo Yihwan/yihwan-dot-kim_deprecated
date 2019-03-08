@@ -53,7 +53,7 @@ export const TerminalBody = styled.div`
   box-shadow: 0 15px 35px rgba(65, 65, 74, .3);
   box-shadow: 0 5px 15px rgba(0,0,0,.2);
 
-  & > div:not(:first-child) {
+  & > section:not(:first-child) {
     margin-top: 2.5rem;
   }
 `;
