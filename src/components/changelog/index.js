@@ -10,8 +10,8 @@ const Changelog = () => (
     activateBlinker
     header={
       <PromptContainer>
-        <StaticPrompt text="Changelog" subHeader/>
-        <PromptSubHeader>asdasd</PromptSubHeader>
+        <StaticPrompt text='Changelog'/>
+        <PromptSubHeader>Some highlights from life.</PromptSubHeader>
       </PromptContainer>
     }
     content={<Timeline />}

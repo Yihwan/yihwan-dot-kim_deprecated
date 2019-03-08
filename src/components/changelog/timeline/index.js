@@ -16,7 +16,7 @@ import {
 const TimelineItem = ({ item }) => (
   <TimelineItemContainer>
     <ItemMetaData>
-      <ItemIcon color={item.iconColor}>{item.icon}</ItemIcon>
+      <ItemIcon>{item.icon}</ItemIcon>
       <ItemDate>{item.date}</ItemDate>
     </ItemMetaData>
     <ItemText>
@@ -28,6 +28,7 @@ const TimelineItem = ({ item }) => (
     </ItemText>
   </TimelineItemContainer>
 )
+
 const Timeline = () => (
   <TimelineContainer>
     {data.map(item => <TimelineItem key={item.id} item={item}/>)}
