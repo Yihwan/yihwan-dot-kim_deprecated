@@ -6,7 +6,6 @@ import Terminal from 'components/terminal';
 import Intro from 'components/intro';
 import Changelog from 'components/changelog';
 import Contact from 'components/contact';
-import Placeholder from 'components/placeholder';
 
 class App extends Component {
   render() {
