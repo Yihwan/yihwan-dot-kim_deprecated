@@ -3,6 +3,24 @@
 import styled from '@emotion/styled';
 import { COLORS, MEDIA_QUERIES } from 'constants.js';
 
+export const HiddenButton = styled.button`
+  visibility: hidden;
+  ${props => props.isClosed && 'visibility: visible;'};
+  font-size: 2rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+
+  position: fixed;
+  margin-top: -16px;
+  margin-left: -18px;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+`;
+
 export const TerminalContainerWrapper = styled.section`
   height: 100vh;
   display: flex;
@@ -14,7 +32,10 @@ export const TerminalContainerWrapper = styled.section`
   }
 `;
 
-export const TerminalContainer = styled.section`
+export const TerminalContainer = styled.div`
+position: relative;
+z-index: 2;
+  ${props => props.isClosed && 'visibility: hidden;'};
   display: flex;
   flex-direction: column;
 
@@ -44,14 +65,18 @@ export const TerminalMenuButton = styled.div`
   border-radius: 50%;
   background-color: ${props => props.background};
   margin-left: 0.5rem;
+
+  cursor: pointer;
 `;
 
 export const TerminalBody = styled.div`
+  ${props => props.isMinimized && 'visibility: hidden;'};
   height: 100%;
   border-radius: 0 0 4px 4px;
   background-color: ${COLORS.darkGrey};
   font-size: 1rem;
-  overflow: scroll;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 
   box-shadow: 0 50px 100px rgba(65, 65, 74, .2);
   box-shadow: 0 15px 35px rgba(65, 65, 74, .3);

@@ -52,7 +52,7 @@ export const data = [
     icon: <FontAwesomeIcon icon={faTree} />,
     date: '2009 Q3',
     header: 'Moved to Stanford',
-    detail: "I distinctly remember getting off the Caltrain and walking the wrong way down University Ave for a good five blocks. Not the best start to college.",
+    detail: "Got off the Caltrain and walked the wrong way down University Ave for a good five blocks. Not the best start to college.",
   },
   {
     id: 5,
