@@ -23,7 +23,7 @@ const TimelineItem = ({ item, lastIndex }) => (
       <Accordion
         activateBlinker={item.id === lastIndex}
         header={<ItemHeader><span>{item.header}</span></ItemHeader>}
-        content={<ItemDetail> {item.detail}</ItemDetail>}
+        content={<ItemDetail key={item.id}> {item.detail}</ItemDetail>}
       />
     </ItemText>
   </TimelineItemContainer>

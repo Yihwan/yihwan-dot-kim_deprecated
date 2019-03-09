@@ -14,7 +14,7 @@ const Changelog = () => (
         <PromptSubHeader>Some highlights from my life.</PromptSubHeader>
       </PromptContainer>
     }
-    content={<Timeline />}
+    content={<Timeline key="changelog"/>}
   />
 );
 

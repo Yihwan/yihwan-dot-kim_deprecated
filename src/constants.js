@@ -1,18 +1,6 @@
 import { css } from '@emotion/core';
 import emotionNormalize from 'emotion-normalize';
 
-export const globalStyles = css`
-  ${emotionNormalize}
-  html,
-  body {
-    padding: 0;
-    margin: 0;
-    background: white;
-    min-height: 100%;
-    font-family: Monaco, Consolas, monospace;
-  }
-`;
-
 export const COLORS = {
   'almostWhite': '#f7f7f7',
   'lightGrey': '#e4e3e5',
@@ -28,7 +16,7 @@ export const COLORS = {
   'iconGreen': '#92eac0',
   'iconRed': '#ea9292',
   'iconBlue': '#92bcea',
-  
+
 }
 
 export const MEDIA_QUERIES = {
@@ -37,3 +25,38 @@ export const MEDIA_QUERIES = {
   'mdUp': '@media (min-width: 768px)',
   'lgUp': '@media (min-width: 992px)',
 }
+
+
+export const globalStyles = css`
+  ${emotionNormalize}
+  @font-face {
+    font-family: Monaco;
+    src: url(monaco-webfont.woff);
+  }
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    background: white;
+    min-height: 100%;
+    font-family: Monaco, Consolas, monospace;
+  }
+
+  .accordion-enter {
+    opacity: 0.01;
+  }
+
+  .accordion-enter.accordion-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+  }
+
+  .accordion-leave {
+    opacity: 1;
+  }
+
+  .accordion-leave.accordion-leave-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+  }
+`;

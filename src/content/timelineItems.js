@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   faBabyCarriage,
-  faEnvelope,
   faPlaneDeparture,
   faGlobeEurope,
   faTree,
@@ -16,7 +15,6 @@ import {
   faHiking,
   faCloudSun,
   faMountain,
-  faHandshake,
   faGem,
   faGraduationCap,
   faMedal,
@@ -59,7 +57,7 @@ export const data = [
     icon: <FontAwesomeIcon icon={faHandHoldingHeart} />,
     date: '2010 Q3',
     header: 'Volunteered in Quito, Ecuador',
-    detail: "Partnered up with a local children’s foundation. Also, bought way too many burrito-sized, deep-fried empanadas for $1 each.",
+    detail: "Partnered up with a local children’s foundation. Also, bought way too many burrito-sized, deep-fried empanadas for a dollar each.",
   },
   {
     id: 6,

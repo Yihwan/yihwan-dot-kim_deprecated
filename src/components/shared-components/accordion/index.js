@@ -4,6 +4,7 @@ import {
   BlinkableHeaderContainer,
   ContentContainer
 } from './style';
+import { CSSTransitionGroup } from 'react-transition-group'
 
 class Accordion extends React.Component {
   constructor(props){
@@ -32,7 +33,12 @@ class Accordion extends React.Component {
         <BlinkableHeaderContainer blink={activateBlinker && isHeaderBlinking} onClick={this.handleClick}>
           {header}
         </BlinkableHeaderContainer>
-        {isOpen && <ContentContainer>{content}</ContentContainer>}
+        <CSSTransitionGroup
+          transitionName="accordion"
+          transitionEnterTimeout={500}
+          transitionLeaveTimeout={300}>
+          {isOpen && <ContentContainer>{content}</ContentContainer>}
+        </CSSTransitionGroup>
       </AccordionContainer>
     )
   }
