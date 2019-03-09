@@ -25,6 +25,10 @@ export const COLORS = {
   'borderGreen': '#2dbb41',
   'terminalYellow': '#e7d184',
   'terminalCyan': '#35feff',
+  'iconGreen': '#92eac0',
+  'iconRed': '#ea9292',
+  'iconBlue': '#92bcea',
+  
 }
 
 export const MEDIA_QUERIES = {

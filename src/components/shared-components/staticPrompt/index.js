@@ -3,8 +3,8 @@ import { Prompt } from 'components/shared-components/style';
 
 const StaticPrompt = ({ text }) => (
   <Prompt>
-    >{' '}
-    {text}
+    <span>>{' '}</span>
+    <span>{text}</span>
   </Prompt>
 );
 

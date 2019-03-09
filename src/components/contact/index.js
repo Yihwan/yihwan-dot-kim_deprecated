@@ -11,15 +11,9 @@ export const Contact = () => (
     <PromptSubHeader>
       [
         "<StyledLink href="mailto:hi@yihwan.kim">hi@yihwan.kim</StyledLink>",
-        "<StyledLink href="https://www.strava.com/athletes/yihwan" target="_blank" rel="noreferrer">
-          Strava
-        </StyledLink>",
-        "<StyledLink href="https://github.com/Yihwan" target="_blank" rel="noreferrer">
-          GitHub
-        </StyledLink>",
-        "<StyledLink href="https://www.linkedin.com/in/yihwan" target="_blank" rel="noreferrer">
-          LinkedIn
-        </StyledLink>"
+        "<StyledLink href="https://www.strava.com/athletes/yihwan" target="_blank" rel="noopener noreferrer">Strava</StyledLink>",
+        "<StyledLink href="https://github.com/Yihwan" target="_blank" rel="noopener noreferrer">GitHub</StyledLink>",
+        "<StyledLink href="https://www.linkedin.com/in/yihwan" target="_blank" rel="noopener noreferrer">LinkedIn</StyledLink>"
       ]
     </PromptSubHeader>
   </PromptContainer>

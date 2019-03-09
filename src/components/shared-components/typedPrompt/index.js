@@ -4,7 +4,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Prompt, Cursor } from 'components/shared-components/style';
 
-const INITIAL_DELAY = 900;
+const INITIAL_DELAY = 1200;
 
 class TypedPrompt extends React.Component {
   constructor(props) {

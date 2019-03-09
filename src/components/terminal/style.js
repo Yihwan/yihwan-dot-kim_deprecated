@@ -22,7 +22,7 @@ export const TerminalContainer = styled.section`
   height: 100%;
 
   ${MEDIA_QUERIES.mdUp} {
-    max-width: 992px;
+    max-width: 768px;
     margin: 0 2rem;
     height: 90%;
   }
@@ -50,10 +50,19 @@ export const TerminalBody = styled.div`
   height: 100%;
   border-radius: 0 0 4px 4px;
   background-color: ${COLORS.darkGrey};
-  padding: 2.5rem;
-  font-size: 1.15rem;
+  font-size: 1rem;
+  overflow: scroll;
 
   box-shadow: 0 50px 100px rgba(65, 65, 74, .2);
   box-shadow: 0 15px 35px rgba(65, 65, 74, .3);
   box-shadow: 0 5px 15px rgba(0,0,0,.2);
+
+  & > section:not(:first-child) {
+    margin-top: 2.5rem;
+  }
+
+  padding: 2rem 1.5rem;
+  ${MEDIA_QUERIES.mdUp} {
+    padding: 2.5rem;
+  }
 `;
