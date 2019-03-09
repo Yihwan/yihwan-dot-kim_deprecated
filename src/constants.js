@@ -29,10 +29,6 @@ export const MEDIA_QUERIES = {
 
 export const globalStyles = css`
   ${emotionNormalize}
-  @font-face {
-    font-family: Monaco;
-    src: url(monaco-webfont.woff);
-  }
   html,
   body {
     padding: 0;

@@ -28,7 +28,7 @@ export const TerminalContainerWrapper = styled.section`
   align-items: center;
 
   ${MEDIA_QUERIES.smUp} {
-    background: linear-gradient(45deg, rgba(53, 254, 255, .1), rgba(231, 209, 132, .1));
+    background: linear-gradient(45deg, rgba(53, 254, 255, .15), rgba(231, 209, 132, .15));
   }
 `;
 
