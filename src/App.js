@@ -17,7 +17,6 @@ class App extends Component {
           <Intro />
           <Changelog />
           <Contact />
-          <Placeholder />
         </Terminal>
       </React.Fragment>
     );
