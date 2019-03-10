@@ -113,7 +113,7 @@ export const data = [
     icon: <FontAwesomeIcon icon={faMedal} />,
     date: '2016 Q3',
     header: 'Ran a marathon',
-    detail: "Glad I did it, but might stick with 21ks ... unless I draw into NYC? Math says the chances of getting in versus not getting in five times are equal, so we'll see (0/3 so far).",
+    detail: "Glad I did it, but might stick with 21ks ... unless I draw into NYC? Math says the chances of getting in versus not getting in seven times are equal, so we'll see (0/3 so far).",
   },
   {
     id: 14,
